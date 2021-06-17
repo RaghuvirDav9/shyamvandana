@@ -1,0 +1,105 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Invoice</h1>
+			<div style="overflow: hidden;">
+			<address  style="float: left;">
+				<p>SHYAM VANDANA TRADING</p>
+				<p>Jin Na Naka,char rasta<br>Station Road, Gadhada(sw)</p>
+				<p>DIS: Botad</p>
+				<p>364750</p>
+			</address>
+			<address  style="float: right;">
+				<p>GSTin No.: 24AVGPK1122N1ZQ</p>
+				<p>BANK: Bank Of India<br>Account No.: 321820110000078</p>
+				<p>IFSC : BKID0003218</p>
+<!--				<p>364750</p>-->
+			</address>
+			</div>
+			<span><img alt="" src="1.png"><input type="file" accept="image/*"></span>
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address >
+				<div style="overflow: hidden;">NAME  : <p contenteditable style="float: right;">  </p></div><br>
+				<div style="overflow: hidden;">GSTin No.  :  <p contenteditable style="float: right;">  </p></div>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span >Invoice #</span></th>
+					<td><span contenteditable></span></td>
+				</tr>
+				<tr>
+					<th><span >Date</span></th>
+					<td><span contenteditable></span></td>
+				</tr>
+				<tr>
+					<th><span >Total</span></th>
+					<td><span id="prefix" >₹</span><span ></span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span >Item</span></th>
+						<th><span >Description</span></th>
+						<th><span >Rate</span></th>
+						<th><span >Quantity</span></th>
+						<th><span >Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a class="cut">-</a><span contenteditable>cement</span></td>
+						<td><span contenteditable>opc</span></td>
+						<td><span contenteditable></span></td>
+						<td><span contenteditable></span></td>
+						<td><span>₹</span><span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add">+</a>
+			<table class="balance">
+				<tr>
+					<th><span >Sub Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+				<tr>
+					<th><span >CGST</span></th>
+					<td><span data-prefix>$</span><span >0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >SGST</span></th>
+					<td><span data-prefix>$</span><span >0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Discount</span></th>
+					<td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1><span >SHYAM VANDANA TRADERS</span></h1>
+			<div  style="overflow: hidden;">
+				<p style="float: left;">Bhaveshbhai Kothival : 9426962905</p>
+				<p style="float: right;">Mohitbhai Kothival : 9429635035</p>
+			</div>
+		</aside>
+		<br><br>
+		<div style="overflow: hidden;">
+		<a class="print" onclick="window.print()" style="float: right;">_Print_</a>
+		</div>
+<!--	<button onclick="window.print()">Print </button>-->
+	</body>
+</html>
